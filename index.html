@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo mapa</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <h1>Localização</h1>
+
+    <div class="filtros_mapa">
+      <h3>Filtrar</h3>
+
+      <div class="filtros_body">
+        <div>
+          <input type="checkbox" checked id="input_educacao" data-category="educacao" />
+          <label for="input_educacao"
+            ><img
+              class="input_icon educacao_icon"
+              src="http://localhost:5500/images/educacao.svg"
+              alt=""
+          /></label>
+        </div>
+        <div>
+          <input type="checkbox" checked id="input_restaurantes" data-category="restaurantes" />
+          <label for="input_restaurantes"
+            ><img
+              class="input_icon"
+              src="http://localhost:5500/images/restaurantes.svg"
+              alt=""
+          /></label>
+        </div>
+        <div>
+          <input type="checkbox" checked id="input_saude" data-category="saude" />
+          <label for="input_saude"
+            ><img
+              class="input_icon"
+              src="http://localhost:5500/images/saude.svg"
+              alt=""
+          /></label>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="./index.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
